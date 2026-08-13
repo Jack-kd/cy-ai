@@ -1,0 +1,19 @@
+{
+  "appId": "yyb.ai.y1779639959407c7f49371b3978075",
+  "appName": "初忆AI助手",
+  "webDir": "dist-apk",
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    },
+    "StatusBar": {
+      "overlaysWebView": false,
+      "style": "Default",
+      "backgroundColor": "#00000000"
+    }
+  },
+  "server": {
+    "hostname": "app-web.tencentapps.net",
+    "androidScheme": "https"
+  }
+}
