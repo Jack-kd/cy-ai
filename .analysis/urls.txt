@@ -1,0 +1,16 @@
+http://
+http://localhost
+http://www.w3.org/1998/Math/MathML
+http://www.w3.org/1999/xlink
+http://www.w3.org/2000/svg
+https://
+https://${vh}/app_builder
+https://api.deepseek.com/v1
+https://api.openai.com/v1
+https://dashscope.aliyuncs.com/compatible-mode/v1
+https://docs.cloudbase.net/api-reference/webv3/initialization
+https://open.bigmodel.cn/api/paas/v4
+https://servicewechat.com
+https://support.qq.com/products/148793
+https://tcb.cloud.tencent.com/dev?envId=#/identity/login-manage
+https://vuejs.org/error-reference/#runtime-${r}

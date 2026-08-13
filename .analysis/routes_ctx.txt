@@ -1,0 +1,20 @@
+PATH=/data-management
+  CTX: +="#"),Zs(X5)),routes:[{path:"/",name:"home",component:PW},{path:"/data-management",name:"data-management",component:oG},{path:"/user",name:"user",component:QX},{p
+
+PATH=/user
+  CTX: th:"/data-management",name:"data-management",component:oG},{path:"/user",name:"user",component:QX},{path:"/settings",name:"settings",component:EZ},{path
+
+PATH=/settings
+  CTX: ent",component:oG},{path:"/user",name:"user",component:QX},{path:"/settings",name:"settings",component:EZ},{path:"/announcements",name:"announcements",compo
+
+PATH=/announcements
+  CTX: ponent:QX},{path:"/settings",name:"settings",component:EZ},{path:"/announcements",name:"announcements",component:tQ},{path:"/community",name:"community",componen
+
+PATH=/community
+  CTX: ,{path:"/announcements",name:"announcements",component:tQ},{path:"/community",name:"community",component:S1},{path:"/community-user/:userId",name:"community-
+
+PATH=/community-user/:userId
+  CTX: nent:tQ},{path:"/community",name:"community",component:S1},{path:"/community-user/:userId",name:"community-user",component:S5},{path:"/notifications",name:"notifications"
+
+PATH=/notifications
+  CTX: ommunity-user/:userId",name:"community-user",component:S5},{path:"/notifications",name:"notifications",component:J5}]});var X5;const Z5=((...e)=>{const t=(xa||(x

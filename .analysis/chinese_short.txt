@@ -1,0 +1,296 @@
+[v1 兼容] WeixinAuthProvider.signInWithRedirect() 在当前版本中无法实现。 建议使用 auth.signInWithOAuth({ provider: 'providerId' }) 替代。
+[v1 兼容] WeixinAuthProvider.getLinkRedirectResult() 在当前版本中无法实现。 建议使用 auth.linkIdentity({ provider: 'providerId' }) 替代。
+  获取方式：登录腾讯云开发平台 → 环境管理 → 环境设置 → 环境 ID\n  建议通过环境变量配置：process.env.CLOUDBASE_ENV 或 import.meta.env.VITE_CLOUDBASE_ENV
+[v1 兼容] WeixinAuthProvider.getRedirectResult() 在当前版本中无法实现。 建议使用 auth.verifyOAuth({ code, state, provider }) 替代。
+[v1 兼容] shouldRefreshAccessToken() 在当前版本中无法实现。 建议使用 auth.onAuthStateChange(callback) 来监听 TOKEN_REFRESHED 事件替代。
+[v1 兼容] User.linkWithTicket() 在当前版本中无法实现。 建议使用 auth.signInWithCustomTicket(() => Promise.resolve(ticket)) 替代。
+:`，画风：${l}`,p=Ze.imgResults.value.map(e=>`data:image/${e.format};base64,${e.base64}`);t.addMessage({role:
+[CloudBase Auth] 参数错误\n\n  请检查传入的参数是否符合要求：\n  - 不能同时输入手机号和邮箱\n  - 手机号格式需正确（如 +86 开头）\n  - 必须提供手机号或邮箱\n\n
+))}function ke(e,t){t&&navigator.clipboard.writeText(t).then(()=>{d(`${e}: ${t} 已复制`)}).catch(()=>d(
+当前使用「用户名密码登录」，需确保：\n  ✓ 控制台已开启「用户名密码登录」\n  ✓ 用户已注册且凭据正确\n  如果不需要用户系统，建议改用 auth.signInAnonymously()
+[v1 兼容] User.linkWithRedirect() 在当前版本中无法实现。 建议使用 auth.linkIdentity({ provider: 'providerId' }) 替代。
+[v1 兼容] User.updatePhoneNumber() 在当前版本中无法实现。 建议使用 auth.updateUser({ phone: newPhoneNumber }) 替代。
+)}async function pt(){d(`当前云端注册用户: ${it.totalUsers} 人，备份数: ${it.totalBackups}`)}function ht(){d(
+[CloudBase Auth] 用户状态异常\n\n  当前用户账号可能处于以下状态之一：\n  - 账号已被封禁\n  - 账号正在审核中\n  - 账号已被锁定（多次密码错误）\n\n
+" 参数。如需修改密码请使用 resetPasswordForOld（旧密码修改）、resetPasswordForEmail（验证码重置）或 reauthenticate（重新认证后改密）
+:n||`操作失败（第${t}次尝试）`}if(t<3&&(await new Promise(e=>setTimeout(e,1e3*t)),!navigator.onLine)){e=
+图片生成完成！已通过${i}模式生成${a}图片（分辨率：${u}x${c}，画面比例：${Ze.imgAspectRatio.value}${d}），可前往「创作-图集」查看并下载。
+ data-v-5d3b07fa>欢迎使用初忆AI助手。本协议是您与初忆AI助手之间关于使用本应用服务所订立的协议。</p><p data-yyb-inspector-info=
+[v1 兼容] User.unlink() 在当前版本中无法实现。 建议使用 auth.unlinkIdentity({ provider: loginType }) 替代。
+)+(Me.value.avoidanceRules.trim()?`\n\n[避坑策略] 必须避免以下行为：${Me.value.avoidanceRules}`:
+===e?(qe.value=t,He.value=0):(ce.value=`请解释以下内容：${t}`,to())}const ur=zt(!1),cr=zt(
+ data-v-5d3b07fa>1. 用户需通过手机号注册账号，注册时请确保提供真实有效的手机号码。</p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>2. 用户可选择开启云端同步功能，数据将加密传输至云端存储。</p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>1. 我们重视用户隐私，用户的对话数据默认存储在本地设备。</p><p data-yyb-inspector-info=
+  2. 到官方问答社区提问：https://cnb.cool/tencent/cloud/cloudbase/community/-/issues\n
+ data-v-5d3b07fa>2. 用户应对账号安全负责，不得将账号提供给第三方使用。</p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>初忆AI助手重视您的隐私。我们承诺保护您的个人信息安全。</p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>3. 用户可随时在数据管理页面查看、导出或清除数据。</p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>1. 注册时需提供手机号码，用于账号创建和身份验证。</p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>2. 您上传的头像、昵称等信息将存储在云端数据库。</p><p data-yyb-inspector-info=
+'+(Me.value.systemPrompt.trim()?`\n\n[智能体强约束] ${Me.value.systemPrompt}`:
+!==t.thinkDepth&&n[t.thinkDepth]&&(r+=`[思考深度] ${n[t.thinkDepth]}\n\n`),
+></path></svg> 2026 初忆 · All Rights Reserved </p></div>',1))])])])):Lo(
+ data-v-5d3b07fa>3. AI对话记录在开启云同步后会上传至云端。</p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>2. 密码使用SHA-256加密存储，不可逆。</p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>AI 生成内容仅供参考，不构成任何专业建议。</p><p data-yyb-inspector-info=
+  2 - 当前域名是否在安全域名列表中：https://console.cloud.tencent.com/tcb/env/safety
+);r+=`[用户记忆] 以下是关于用户的记忆信息，请参考这些信息调整回复风格和内容：\n${e}\n\n`}t.webSearch&&(
+ data-v-5d3b07fa>3. 您可随时删除个人数据和账号信息。</p><p data-yyb-inspector-info=
+当前使用「匿名登录」，需确保：\n  ✓ 控制台已开启「匿名登录」\n  注意：匿名用户无需用户名密码，适用于快速体验或临时访问场景
+ data-v-5d3b07fa>1. 所有数据传输采用加密通道。</p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>二、账号注册</strong></p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>三、隐私保护</strong></p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>四、免责声明</strong></p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>一、总则</strong></p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>五、其他</strong></p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>隐私政策</strong></p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>信息收集</strong></p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>信息安全</strong></p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>数据使用</strong></p><p data-yyb-inspector-info=
+ data-v-5d3b07fa>您的数据仅用于提供和改进服务，不会出售给第三方。</p>',12))],64)):Lo(
+:`预计剩余约 ${n}秒`,Ct()}()});const St=zt(1024),It=zt(1024),Ft=[
+当模型为 HY-Image-v3.0-I2I-ToB-v1.0.1 时，image_urls 最多只能有 1 个元素
+当模型为 HY-Image-v3.0-I2I-ToB-v1.0.1 时，images 最多只能有 1 个元素
+初忆AI助手-备份-${(new Date).toISOString().slice(0,10)}.json
+[引用回复] 用户引用了以下AI回复内容：\n「${Je.value}」\n请针对此内容进行回答。\n\n
+即可管理记忆，AI会根据记忆调整回复风格',-1)),Le.value.length?(Co(),Io(
+ data-v-5d3b07fa>我们保留随时修改本协议的权利。</p>',13))],64)):Lo(
+当前云端注册用户: ${it.totalUsers} 人，备份数: ${it.totalBackups}
+当前使用「OTP 验证码登录」，需确保：\n  ✓ 控制台已开启「短信验证码登录」或「邮箱验证码登录」
+  2 - 调用 auth().signInAnonymouslyInWx() 的语法或参数是否正确
+  1 - 调用 auth().isUsernameRegistered() 的语法或参数是否正确
+当前使用「第三方 OAuth 登录」，需确保：\n  ✓ 控制台已配置并开启对应的第三方身份源
+  1 - 调用 auth().getProviderSubType() 的语法或参数是否正确
+,content:`上传文件：${e.name}`}),t.addMessage({role:
+[用户记忆] 以下是关于用户的记忆信息，请参考这些信息调整回复风格和内容：\n${e}\n\n
+  2 - 被调用的扩展能力是否已经安装并通过 registerExtension() 注册
+  2 - 调用 auth().signInWithUnionId() 的语法或参数是否正确
+\n\n[避坑策略] 必须避免以下行为：${Me.value.avoidanceRules}
+  1 - 调用 auth().bindWithProvider() 的语法或参数是否正确
+  1 - 调用 auth().bindPhoneNumber() 的语法或参数是否正确
+  1 - 调用 auth().getVerification() 的语法或参数是否正确
+  2 - 调用 auth().signInWithEmail() 的语法或参数是否正确
+  2 - 调用 auth().getWedaUserInfo() 的语法或参数是否正确
+等身份问题；3.用户明确要求自我介绍。其他所有场景禁止附加身份介绍，直接回答问题，可自称
+\n  提示：不同环境（开发/测试/生产）的用户库是隔离的，请确认 envId 正确。
+  1 - 调用 auth().unbindProvider() 的语法或参数是否正确
+  1 - 调用 auth().getCurrentUser() 的语法或参数是否正确
+  2 - 调用 auth().signInWithSms() 的语法或参数是否正确
+  1 - 调用 auth().getLoginState() 的语法或参数是否正确
+,AK,ue(p.value?Q.value?`注册时间: ${Q.value}`:
+[CloudBase Auth] 操作失败\n\n  如果问题持续存在，建议：\n
+  1 - 调用 User.updatePassword() 的语法或参数是否正确
+  1 - 调用 User.updateUsername() 的语法或参数是否正确
+[CloudBase Auth] signInWithPassword 失败 [
+  2 - 调用 auth().getUserInfo() 的语法或参数是否正确
+备份_${(new Date).toLocaleString("zh-CN")}
+[CloudBase Auth] signInAnonymously 失败 [
+  2 - 调用 auth().bindOpenId() 的语法或参数是否正确
+  1 - 调用 getUploadMetadata() 的语法或参数是否正确
+- ${e.text}${"auto"===e.type?"（自动）":""}
+  1 - 调用 auth().bindEmail() 的语法或参数是否正确
+  1 - 调用 invokeExtension() 的语法或参数是否正确
+\n\n[智能体强约束] ${Me.value.systemPrompt}
+  1 - 调用 cloudbase.init() 的语法或参数是否正确
+  1 - 调用 getTempFileURL() 的语法或参数是否正确
+  1 - 调用 auth().verify() 的语法或参数是否正确
+!==a.value?`暂无${_G[a.value]}分类的动态`:
+  1 - 调用 User.refresh() 的语法或参数是否正确
+  1 - 调用 callFunction() 的语法或参数是否正确
+  1 - 调用 downloadFile() 的语法或参数是否正确
+  1 - 调用 User.update() 的语法或参数是否正确
+[附加规则] ${Me.value.extraRules}\n\n
+  1 - 调用 uploadFile() 的语法或参数是否正确
+  1 - 调用 deleteFile() 的语法或参数是否正确
+添加')),Le.value.length?(Co(),Io(
+  1 - 调用 copyFile() 的语法或参数是否正确
+[角色设定] ${Vr[t.codePreset]}\n\n
+  1 - 当前环境是否开启了小程序unionId静默登录
+[tcb-js-sdk] 获取实时数据推送登录票据失败: 
+确定删除选中的 ${ke.value.size} 条对话？
+[思考深度] ${n[t.thinkDepth]}\n\n
+[CloudBase Auth] 登录方式未开启\n\n
+[CloudBase Auth] 登录方式不匹配\n\n
+  1 - 当前环境是否开启了小程序openId静默登录
+>如果有问题或建议，欢迎联系我们</p><a href=
+[CloudBase Auth] 凭据验证失败\n\n
+[tcb-js-sdk] 获取实时数据推送登录票据失败
+updateUser 不支持更新密码，检测到传入了 "
+请先在设置中配置 ${p.brand} API Key
+如果问题依然存在，建议到官方问答社区提问或寻找帮助：
+Auth.getAuthHeader API 已废弃
+  3 - 云存储安全规则是否限制了当前登录状态访问
+请检查调用方式，或前往云开发 AI+ 首页查看文档
+  2 - 当前环境是否开通了手机验证码/邮箱登录
+  1 - 当前环境是否开启了小程序短信验证码登陆
+  3 - 函数安全规则是否限制了当前登录状态访问
+() 所需的登录方式尚未在云开发控制台启用。\n
+" 可能是占位符，请替换为真实的环境 ID。\n
+${Math.floor(t/36e5)}小时前
+${Math.floor(t/864e5)}天前
+[@cloudbase/js-sdk] 请求在
+  参考 API 文档确认各参数的格式和约束：
+${Math.floor(t/6e4)}分钟前
+  请联系管理员在云开发控制台检查用户状态：
+  2 - 当前环境是否开通了用户名密码登录
+  2 - 当前环境是否开通了短信验证码登录
+  2 - 当前账户是否已经与此登录方式解绑
+即可存入图集',-1))]))])):Lo(
+[CloudBase] 检测到环境 ID "
+缺少 privatelink sdk 地址
+  4. 也可在云开发控制台手动创建用户：
+  2 - 当前环境是否开通了邮箱密码登录
+)+'——1.全新对话首次开场；2.用户问
+暂无${_G[a.value]}分类的动态
+查询参数对象值不能均为undefined
+「短信验证码登录」或「邮箱验证码登录」
+  1. 检查云开发控制台的认证配置：
+  1 - 当前环境是否开启了匿名登录
+  1 - 当前环境是否开启了邮箱登陆
+  2 - 此账户是否已经绑定此第三方
+  2 - 用户信息中是否包含非法值
+  3 - 新密码中是否包含非法字符
+  2 - 当前环境下是否存在此函数
+API错误(${u.status})
+「微信小程序 OpenID 登录」
+[对话上下文]\n${e}\n\n
+() 时遇到错误，可能原因：\n
+验证码已过期或不正确，请重新获取
+小程序unionId静默登录失败
+,EH,'暂无记忆，在聊天中输入
+注册时间: ${Q.value}
+Cloudbase 初始化失败
+\n  请按以下步骤开启：\n
+,a=e>1?`${e}张`:
+小程序不支持 wasm 加载
+小程序不支持动态 js 加载
+等待图形验证码校验结果...
+「微信小程序手机号授权登录」
+  1. 打开云开发控制台：
+() 时凭据校验未通过。\n
+docId必须为字符串或数字
+上传文件：${e.name}
+${e}: ${t} 已复制
+操作失败（第${t}次尝试）
+请求超时，请检查网络后重试
+小程序绑定OpenID失败
+请求过于频繁，请稍后重试
+AI+ 请求出错，错误码
+  需要开启的登录方式：
+  更多帮助请参考文档：
+获取微搭插件用户信息失败
+请解释以下内容：${t}
+  4. 控制台地址：
+获取用户是否被占用失败
+  1 - 是否已登录
+绑定第三方登录方式失败
+预计剩余约 ${n}秒
+API Key 无效
+请输入你看到的字符：
+  3. 查阅文档：
+刷新本地用户信息失败
+},'生成图片后点击
+\n在此粘贴代码\n
+s内未完成，已中断
+刷新图形验证码失败
+图形验证码校验成功
+图形验证码校验失败
+「用户名密码登录」
+对应的第三方身份源
+「邮箱验证码登录」
+小程序匿名登录失败
+获取本地登录态失败
+获取上传元信息失败
+查询参数必须为对象
+docId不能为空
+参数必需是非空对象
+不能更新_id的值
+},'在聊天中输入
+我是初忆AI助手
+深度思考中...
+联网搜索中...
+深度推理中...
+生成回答中...
+请确认以下各项：
+调用扩展能力失败
+  当前调用的 
+更新用户信息失败
+解除三方绑定失败
+绑定邮箱地址失败
+获取用户信息失败
+获取文件下载链接
+，画风：${l}
+正在思考...
+服务器内部错误
+匿名登录未开启
+「自定义登录」
+对应的登录方式
+更新用户名失败
+绑定手机号失败
+验证码验证失败
+获取验证码失败
+短信验证码登陆
+邮箱验证码登陆
+获取身份源类型
+文档ID不合法
+集合名称不合法
+排序字符不合法
+发送验证码失败
+评论了你的动态
+收藏了你的动态
+回复了你的评论
+初忆AI助手
+你是什么AI
+网络连接失败
+加载中...
+验证中...
+请联系开发者
+用户名或密码
+「匿名登录」
+更新密码失败
+函数调用失败
+上传文件失败
+删除文件失败
+下载文件失败
+批量复制文件
+操作符不合法
+赞了你的动态
+${o} 条
+请输入字符
+密码不正确
+用户不存在
+  调用 
+${e}张
+通义千问
+智谱AI
+请求超时
+错误信息
+输入字符
+登录方式
+关注了你
+与你互动
+新对话
+你是谁
+阿里云
+未实现
+验证码
+身份源
+未开启
+未启用
+不存在
+未注册
+被封禁
+已锁定
+用户
+助手
+默认
+刷新
+确定
+过期
+开启
+凭据
+审核
+超时
+我
+或
