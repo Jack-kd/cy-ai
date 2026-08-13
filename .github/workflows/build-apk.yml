@@ -49,15 +49,18 @@ jobs:
         run: ./gradlew assembleDebug --no-daemon --stacktrace
 
       - name: Build release APK (signed, if keystore secrets are set)
-        if: ${{ secrets.KEYSTORE_BASE64 != '' }}
         env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
-          echo "$KEYSTORE_BASE64" | base64 -d > keystore.jks
-          ./gradlew assembleRelease --no-daemon --stacktrace
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 -d > keystore.jks
+            ./gradlew assembleRelease --no-daemon --stacktrace
+          else
+            echo "No keystore secrets configured; skipping signed release build."
+          fi
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
@@ -76,6 +79,8 @@ jobs:
 
       - name: Summary
         run: |
-          echo "## Build finished" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Debug APK: app/build/outputs/apk/debug/app-debug.apk" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Download it from the **Artifacts** section of this workflow run." >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "## Build finished"
+            echo "- Debug APK: app/build/outputs/apk/debug/app-debug.apk"
+            echo "- Download it from the **Artifacts** section of this workflow run."
+          } >> "$GITHUB_STEP_SUMMARY"
