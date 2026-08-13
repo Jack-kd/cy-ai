@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    namespace 'yyb.ai.y1779639959407c7f49371b3978075'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "yyb.ai.y1779639959407c7f49371b3978075"
+        minSdk 23
+        targetSdk 35
+        versionCode 89
+        versionName "89"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            // 仅在 GitHub Actions 提供了签名密钥时启用（见 .github/workflows/build-apk.yml）
+            if (System.getenv('KEYSTORE_BASE64') != null && !System.getenv('KEYSTORE_BASE64').isEmpty()) {
+                storeFile file("${rootProject.projectDir}/keystore.jks")
+                storePassword System.getenv('KEYSTORE_PASSWORD')
+                keyAlias System.getenv('KEY_ALIAS')
+                keyPassword System.getenv('KEY_PASSWORD')
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (System.getenv('KEYSTORE_BASE64') != null && !System.getenv('KEYSTORE_BASE64').isEmpty()) {
+                signingConfig signingConfigs.release
+            }
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    packagingOptions {
+        resources {
+            excludes += [
+                'META-INF/AL2.0',
+                'META-INF/LGPL2.1',
+                'DebugProbesKt.bin',
+                'META-INF/INDEX.LIST'
+            ]
+        }
+    }
+}
+
+dependencies {
+    // Capacitor core + official plugins
+    implementation 'com.capacitorjs:core:7.6.8'
+    implementation 'com.capacitorjs:keyboard:7.0.0'
+
+    // Tencent custom plugins (reconstructed)
+    // Media picker: PictureSelector + Glide
+    implementation 'io.github.lucksiege:pictureselector:v3.10.9'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    // Networking / json (ApkOpenChecker / CrashReporter)
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'com.google.code.gson:gson:2.11.0'
+
+    // AndroidX (versions matched to original APK)
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.core:core:1.15.0'
+    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.webkit:webkit:1.12.1'
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+    implementation 'androidx.constraintlayout:constraintlayout-core:1.0.4'
+
+    // Kotlin coroutines (matched to original APK)
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+}
